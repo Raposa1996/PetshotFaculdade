@@ -1,0 +1,37 @@
+1.Identificação das Entidades e Atributos:
+O primeiro passo é identificar as entidades relevantes para o sistema do zoológico e os atributos que essas entidades possuem. 
+Neste caso, identificamos as entidades "Zoológico", "Recinto", "Animal" e "Funcionário". Para cada entidade,
+ decidimos quais informações seriam importantes de serem armazenadas, como nome, data de nascimento, espécie, entre outros.
+
+2.Projeto do Diagrama ER:
+Após identificar as entidades e atributos, o próximo passo é criar um diagrama Entidade-Relacionamento (ER) que mostra as relações entre essas entidades. 
+No nosso caso, decidimos que um zoológico pode ter vários recintos e funcionários, que um recinto pertence a um zoológico, 
+que um zoológico pode ter vários animais, e que um animal está em um recinto específico.
+
+3.Criação das Tabelas:
+Com o diagrama ER em mãos, começamos a criar as tabelas em SQL. Para cada entidade, 
+definimos uma tabela correspondente com os atributos apropriados. 
+Nossas tabelas incluíram campos como "ID", "Nome", "Data_de_Nascimento", "Genero", "Saude", "Especie_ID", "Recinto_ID", "Cargo", "Salario", entre outros.
+
+4.Definição de Chaves Primárias e Estrangeiras:
+Identificamos chaves primárias (PK) para cada tabela, que são usadas para identificar exclusivamente cada registro na tabela. 
+Também definimos chaves estrangeiras (FK) para estabelecer relações entre as tabelas.
+ Por exemplo, a tabela "Animal" possui uma chave estrangeira "Recinto_ID" que faz referência à tabela "Recinto".
+
+5.Inserção de Dados de Exemplo:
+Após criar as tabelas, inserimos exemplos de dados utilizando comandos INSERT INTO para popular as tabelas com informações fictícias de zoológicos, 
+recintos, animais e funcionários.
+
+6.Consulta de Dados:
+Para verificar as informações, utilizamos consultas SQL SELECT para recuperar os registros armazenados nas tabelas. 
+Essas consultas nos permitem visualizar os dados inseridos e fazer análises específicas, 
+como encontrar animais em determinado recinto ou funcionários de um zoológico específico.
+
+7.Ajustes e Expansões:
+Durante todo o processo, você pode ajustar e expandir o modelo conforme necessário. 
+Por exemplo, poderia adicionar mais atributos às tabelas ou criar mais relações complexas, 
+como tabelas de visitantes, alimentação dos animais, eventos do zoológico, entre outros.
+
+Em resumo, o desenvolvimento da tabela de zoológico em SQL envolveu a identificação das necessidades, a criação do diagrama ER,
+ a tradução desse diagrama em tabelas SQL, a inserção de dados de exemplo e, por fim,
+ a execução de consultas para verificar e analisar as informações armazenadas.
